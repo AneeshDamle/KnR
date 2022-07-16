@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+/* Here, n is a symbolic parameter */
 #define TABSTOP (8)         /* tabstop length */
 
-/* detab - replace tabs in the input with the proper number of blanks to space to the
- * next tabstop
+/* detab - replace tabs in the input with the proper number of blanks 
+ * to space to the next tabstop
  */
 main() {
 
