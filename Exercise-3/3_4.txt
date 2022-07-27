@@ -1,0 +1,16 @@
+Explanation for why our version of itoa does not handle INT_MIN conversion:
+
+Suppose that an integer variable is assigned a space of n-bits in memory.
+Each bits can be 0 or 1; thus, an integer variable can have 2^n values.
+Thus, it can have 2^(n-1) negative values and 2^(n-1) non-negative values.
+Thus, range of negative values: - 2^(n-1) to -1.
+Range of positive values: 1 to 2^(n-1).
+
+Thus, the absolute value of the largest negative number is 1 greater than the
+largest positive number.
+Hence, INT_MIN * -1 will not fit in an integer, and thus cannot be evaluated
+using int variables.
+
+But, interestingly, INT_MIN - 1 becomes INT_MAX. We can use this modify our
+program.
+
