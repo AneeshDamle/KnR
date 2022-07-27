@@ -1,8 +1,0 @@
-In the word-count program, a word is taken with a loose definition of being a
-sequence of chars, that does not contain a blank, tab or newline.
-Confining to this definition, testing could include:
-    1   More than 1 spaces or tabs after a word
-    2   No input sentence
-    3   Input starting with newline
-    4   Input ending with a blank, tab or newline.
-    5   Joint words (Doubtful as a testing case as per definition)
