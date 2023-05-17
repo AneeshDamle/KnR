@@ -1,2 +1,2 @@
-# KnR_C
+# KnR
 Exercises - Kernighan and Richie
